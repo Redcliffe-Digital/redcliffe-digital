@@ -1,26 +1,38 @@
 // Single source of truth for company facts.
-// Replace placeholder values with the registered details before going live.
+// Verified against Companies House on 14 May 2026 (company number 17197703).
 
 export const company = {
   legalName: "Redcliffe Digital Ltd",
   tradingName: "Redcliffe Digital",
   strapline: "Secure, accessible software for the UK public sector.",
-  companiesHouseNumber: "00000000",
-  vatNumber: "GB 000 0000 00",
-  icoRegistration: "ZA000000",
-  dunsNumber: "000000000",
-  yearFounded: 2025,
+  companiesHouseNumber: "17197703",
+  // Set once registered. Most early-stage SMEs are below the £90k VAT
+  // threshold and not registered — leave blank if so.
+  vatNumber: "" as string,
+  // Update with the ICO registration reference (typically "ZAxxxxxx").
+  icoRegistration: "[Pending registration]",
+  // Optional. Required only for US gov/SAM.gov or some prime supplier
+  // onboarding — leave blank for UK-only buyers.
+  dunsNumber: "" as string,
+  // SIC codes registered at incorporation.
+  sicCodes: [
+    { code: "62012", description: "Business and domestic software development" },
+    { code: "62020", description: "Information technology consultancy activities" },
+  ],
+  yearFounded: 2026,
+  incorporationDate: "5 May 2026",
   registeredOffice: {
-    line1: "Registered office address",
-    line2: "Line 2",
-    city: "Bristol",
-    postcode: "BS1 0AA",
+    line1: "Flat 14, Hanover Court",
+    line2: "Hanover Street",
+    city: "Newcastle",
+    postcode: "ST5 1HE",
     country: "United Kingdom",
   },
   contact: {
-    email: "hello@redcliffedigital.co.uk",
-    bidsEmail: "bids@redcliffedigital.co.uk",
-    phone: "+44 (0)117 000 0000",
+    email: "admin@redcliffedigital.co.uk",
+    bidsEmail: "admin@redcliffedigital.co.uk",
+    // Set once a business line is provisioned.
+    phone: "" as string,
     linkedin: "https://www.linkedin.com/company/redcliffe-digital",
   },
   accreditations: ["ICO Registered"],

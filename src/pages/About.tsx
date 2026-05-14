@@ -35,13 +35,13 @@ const values = [
 ];
 
 const director = {
-  name: "Director name",
+  name: "Joseph Millington",
   role: "Founder & Director",
-  bio: "Background in public sector software delivery, with senior engineering and delivery experience across central government and adjacent regulated sectors. Accountable for every Redcliffe Digital engagement.",
+  bio: "Software engineer with delivery experience across cyber security and financial services, and a prior engagement supporting a Ministry of Defence customer. Sole director and 100% shareholder of Redcliffe Digital Ltd. Accountable for every engagement.",
   expertise: [
-    "Public sector digital delivery",
-    "Cloud and platform engineering",
-    "Service assurance and accreditation",
+    "Cyber security & applied AI",
+    "Financial services back-end engineering",
+    "Cleared engineering for defence customers",
   ],
 };
 
@@ -70,10 +70,14 @@ export function About() {
               <dl className="mt-5 grid grid-cols-2 gap-5 text-sm">
                 <Fact label="Legal name" value={company.legalName} />
                 <Fact label="Companies House" value={company.companiesHouseNumber} />
-                <Fact label="VAT" value={company.vatNumber} />
+                <Fact label="Incorporated" value={company.incorporationDate} />
                 <Fact label="ICO" value={company.icoRegistration} />
-                <Fact label="Founded" value={String(company.yearFounded)} />
-                <Fact label="DUNS" value={company.dunsNumber} />
+                {company.vatNumber ? (
+                  <Fact label="VAT" value={company.vatNumber} />
+                ) : null}
+                {company.dunsNumber ? (
+                  <Fact label="DUNS" value={company.dunsNumber} />
+                ) : null}
               </dl>
             </div>
           </div>

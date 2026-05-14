@@ -147,22 +147,18 @@ export function Contact() {
           <aside className="lg:col-span-5 space-y-6">
             <ContactBlock
               icon={Mail}
-              label="General enquiries"
+              label="All enquiries"
               value={company.contact.email}
               href={`mailto:${company.contact.email}`}
             />
-            <ContactBlock
-              icon={Mail}
-              label="Bid team"
-              value={company.contact.bidsEmail}
-              href={`mailto:${company.contact.bidsEmail}`}
-            />
-            <ContactBlock
-              icon={Phone}
-              label="Phone"
-              value={company.contact.phone}
-              href={`tel:${company.contact.phone.replace(/\s|\(|\)/g, "")}`}
-            />
+            {company.contact.phone ? (
+              <ContactBlock
+                icon={Phone}
+                label="Phone"
+                value={company.contact.phone}
+                href={`tel:${company.contact.phone.replace(/\s|\(|\)/g, "")}`}
+              />
+            ) : null}
             <ContactBlock
               icon={ExternalLink}
               label="LinkedIn"
@@ -199,10 +195,10 @@ export function Contact() {
                 </div>
                 <div>
                   <dt className="text-[11px] uppercase tracking-widest text-brand-slate font-semibold">
-                    VAT
+                    Incorporated
                   </dt>
                   <dd className="text-brand-navy font-medium">
-                    {company.vatNumber}
+                    {company.incorporationDate}
                   </dd>
                 </div>
                 <div>
@@ -213,14 +209,16 @@ export function Contact() {
                     {company.icoRegistration}
                   </dd>
                 </div>
-                <div>
-                  <dt className="text-[11px] uppercase tracking-widest text-brand-slate font-semibold">
-                    DUNS
-                  </dt>
-                  <dd className="text-brand-navy font-medium">
-                    {company.dunsNumber}
-                  </dd>
-                </div>
+                {company.vatNumber ? (
+                  <div>
+                    <dt className="text-[11px] uppercase tracking-widest text-brand-slate font-semibold">
+                      VAT
+                    </dt>
+                    <dd className="text-brand-navy font-medium">
+                      {company.vatNumber}
+                    </dd>
+                  </div>
+                ) : null}
               </dl>
             </div>
           </aside>

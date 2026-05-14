@@ -55,13 +55,15 @@ export function Footer() {
                 <Mail size={16} aria-hidden="true" />
                 {company.contact.email}
               </a>
-              <a
-                href={`tel:${company.contact.phone.replace(/\s|\(|\)/g, "")}`}
-                className="flex items-center gap-2 text-brand-cream hover:text-brand-cyan"
-              >
-                <Phone size={16} aria-hidden="true" />
-                {company.contact.phone}
-              </a>
+              {company.contact.phone ? (
+                <a
+                  href={`tel:${company.contact.phone.replace(/\s|\(|\)/g, "")}`}
+                  className="flex items-center gap-2 text-brand-cream hover:text-brand-cyan"
+                >
+                  <Phone size={16} aria-hidden="true" />
+                  {company.contact.phone}
+                </a>
+              ) : null}
               <a
                 href={company.contact.linkedin}
                 rel="noopener noreferrer"
@@ -118,8 +120,9 @@ export function Footer() {
         <div className="container-x py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-xs text-brand-cream/70">
           <p>
             &copy; {year} {company.legalName}. Registered in England &amp;
-            Wales, company number {company.companiesHouseNumber}. VAT{" "}
-            {company.vatNumber}. ICO {company.icoRegistration}.
+            Wales, company number {company.companiesHouseNumber}.
+            {company.vatNumber ? ` VAT ${company.vatNumber}.` : ""} ICO{" "}
+            {company.icoRegistration}.
           </p>
           <p>Built to UK government accessibility and security standards.</p>
         </div>
