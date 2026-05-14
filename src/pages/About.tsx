@@ -35,7 +35,7 @@ const values = [
 ];
 
 const director = {
-  name: "Joe Millington",
+  name: "Joseph Millington",
   role: "Founder & Director",
   bio: "Software engineer with 8+ years' experience building highly-available, distributed and mission-critical back-end systems. Has led the integration of LLMs and modern ML tooling into production back-ends across cyber threat intelligence, quantitative trading and commodities — including a Retrieval-Augmented Generation pipeline now in live use at a multinational cyber threat intelligence firm. MSc Business Consulting Analytics (Distinction), Loughborough University. UK citizen, eligible for UK security clearance. Sole director and 100% shareholder of Redcliffe Digital Ltd; accountable for every engagement.",
   expertise: [

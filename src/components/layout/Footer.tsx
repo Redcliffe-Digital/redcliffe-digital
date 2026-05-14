@@ -64,15 +64,17 @@ export function Footer() {
                   {company.contact.phone}
                 </a>
               ) : null}
-              <a
-                href={company.contact.linkedin}
-                rel="noopener noreferrer"
-                target="_blank"
-                className="flex items-center gap-2 text-brand-cream hover:text-brand-cyan"
-              >
-                <ExternalLink size={16} aria-hidden="true" />
-                LinkedIn
-              </a>
+              {company.contact.linkedin ? (
+                <a
+                  href={company.contact.linkedin}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="flex items-center gap-2 text-brand-cream hover:text-brand-cyan"
+                >
+                  <ExternalLink size={16} aria-hidden="true" />
+                  LinkedIn
+                </a>
+              ) : null}
             </div>
           </div>
 

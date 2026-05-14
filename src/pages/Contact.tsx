@@ -159,12 +159,14 @@ export function Contact() {
                 href={`tel:${company.contact.phone.replace(/\s|\(|\)/g, "")}`}
               />
             ) : null}
-            <ContactBlock
-              icon={ExternalLink}
-              label="LinkedIn"
-              value="@redcliffe-digital"
-              href={company.contact.linkedin}
-            />
+            {company.contact.linkedin ? (
+              <ContactBlock
+                icon={ExternalLink}
+                label="LinkedIn"
+                value="@redcliffe-digital"
+                href={company.contact.linkedin}
+              />
+            ) : null}
             <div className="border border-brand-stone bg-brand-cream p-6">
               <div className="flex items-start gap-3">
                 <MapPin size={18} className="text-brand-red mt-1" aria-hidden="true" />

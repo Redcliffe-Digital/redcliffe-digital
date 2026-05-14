@@ -33,7 +33,9 @@ export const company = {
     bidsEmail: "admin@redcliffedigital.co.uk",
     // Set once a business line is provisioned.
     phone: "" as string,
-    linkedin: "https://www.linkedin.com/company/redcliffe-digital",
+    // Add the company LinkedIn URL once the page is set up. Empty string =
+    // LinkedIn link is hidden everywhere on the site.
+    linkedin: "" as string,
   },
   accreditations: ["ICO Registered"],
   // Frameworks we currently hold. Add entries (e.g. "G-Cloud 14") only after
