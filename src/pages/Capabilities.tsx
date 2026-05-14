@@ -15,8 +15,8 @@ export function Capabilities() {
           <p className="mt-6 text-lg text-brand-slate leading-relaxed">
             We are organised around the disciplines departmental teams actually
             use day to day. Engagements can be a single specialist or a full
-            multi-disciplinary team — bought through G-Cloud, Digital Outcomes,
-            or directly under bespoke contracts.
+            multi-disciplinary team, under direct contract or as a specialist
+            sub-contractor to an existing prime supplier.
           </p>
         </div>
       </Section>

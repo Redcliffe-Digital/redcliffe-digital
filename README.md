@@ -66,7 +66,7 @@ Then in the repo: **Settings → Pages → Custom domain** → enter `redcliffed
 - **Company facts** (Companies House, VAT, ICO, registered office, contact details): `src/data/company.ts`
 - **Capabilities**: `src/data/capabilities.ts`
 - **Case studies**: `src/data/caseStudies.ts`
-- **Frameworks (G-Cloud, Digital Outcomes)**: `src/data/frameworks.ts`
+- **Routes to market (direct award, sub-contracting, G-Cloud target, DOS target)**: `src/data/frameworks.ts`
 - **Insights / blog posts**: `src/data/insights.ts`
 
 ## Accessibility & compliance

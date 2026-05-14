@@ -24,9 +24,9 @@ export const company = {
     linkedin: "https://www.linkedin.com/company/redcliffe-digital",
   },
   accreditations: ["ICO Registered"],
-  frameworks: [
-    "Crown Commercial Service Supplier",
-    "G-Cloud 14",
-    "Digital Outcomes 6",
-  ],
+  // Frameworks we currently hold. Add entries (e.g. "G-Cloud 14") only after
+  // award and confirmation of supplier status on the Digital Marketplace.
+  frameworks: [] as readonly string[],
+  // Frameworks we're targeting at the next refresh.
+  frameworksTargeted: ["G-Cloud", "Digital Outcomes"],
 } as const;

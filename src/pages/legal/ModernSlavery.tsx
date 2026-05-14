@@ -13,8 +13,7 @@ export function ModernSlavery() {
         Redcliffe Digital Ltd is a UK-incorporated digital engineering company
         delivering software, cloud and design services to public sector
         clients. We employ permanent staff and engage approved associates and
-        contractors against framework agreements with the Crown Commercial
-        Service and direct contracts.
+        contractors under direct written contracts.
       </p>
 
       <h2>Our supply chain</h2>

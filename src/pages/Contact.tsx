@@ -32,9 +32,9 @@ export function Contact() {
             Brief us on your forthcoming opportunity.
           </h1>
           <p className="mt-6 text-lg text-brand-slate leading-relaxed">
-            Whether you are issuing a Statement of Requirements through Digital
-            Outcomes, scoping a G-Cloud call-off, or running a discovery, we
-            will respond within one working day.
+            Whether you are scoping a discovery, a direct award, or bringing
+            us in as a specialist sub-contractor to an existing prime, we will
+            respond within one working day.
           </p>
         </div>
       </Section>
@@ -91,14 +91,14 @@ export function Contact() {
                     />
                     <Select
                       id="framework"
-                      label="Framework"
+                      label="Engagement route"
                       value={form.framework}
                       onChange={(v) => setForm({ ...form, framework: v })}
                       options={[
                         "Not yet decided",
-                        "G-Cloud 14",
-                        "Digital Outcomes 6",
                         "Direct award",
+                        "Sub-contract to prime",
+                        "Consortium bid",
                         "Other",
                       ]}
                     />

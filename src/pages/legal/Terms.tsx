@@ -7,7 +7,7 @@ export function Terms() {
       eyebrow="Governance"
       title="Terms of use"
       lastReviewed="May 2026"
-      intro="These terms govern your use of redcliffedigital.co.uk. Engagements with our clients are governed by separate written contracts under the relevant Crown Commercial Service framework or bespoke agreement."
+      intro="These terms govern your use of redcliffedigital.co.uk. Engagements with our clients are governed by separate written contracts agreed directly between Redcliffe Digital and the engaging authority, or by call-off arrangements where a prime supplier engages us as a sub-contractor."
     >
       <h2>Use of this website</h2>
       <p>

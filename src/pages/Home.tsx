@@ -118,7 +118,7 @@ export function Home() {
                   Explore our capabilities
                 </Button>
                 <Button as="link" to="/frameworks" variant="outline">
-                  Buy through G-Cloud
+                  Ways to engage us
                 </Button>
               </div>
 

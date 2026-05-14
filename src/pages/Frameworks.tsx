@@ -1,28 +1,28 @@
 import { Section } from "../components/ui/Section";
 import { Card } from "../components/ui/Card";
 import { Button } from "../components/ui/Button";
-import { frameworks } from "../data/frameworks";
-import { ArrowRight, BadgeCheck } from "lucide-react";
+import { routes } from "../data/frameworks";
+import { ArrowRight, CheckCircle2, Clock } from "lucide-react";
 
 const buyingProcess = [
   {
     step: "01",
-    title: "Search the Digital Marketplace",
-    body: "Find Redcliffe Digital under G-Cloud 14 or Digital Outcomes 6. Filter by lot, region or specialism.",
+    title: "Introduction",
+    body: "Send us the requirement, the framework (if known) and the timeline. We respond within one UK working day with clarifying questions and an indicative team shape.",
   },
   {
     step: "02",
-    title: "Shortlist & request information",
-    body: "Issue clarifications through the Marketplace. We respond within one working day with pricing, redacted case studies and named CVs.",
+    title: "Proposal",
+    body: "We produce a written proposal — scope, named people, milestones, pricing — referencing the assurance evidence relevant to your authority.",
   },
   {
     step: "03",
-    title: "Award & call-off",
-    body: "Sign the call-off contract under the framework. Service Level Agreements, Key Performance Indicators and exit provisions all framework-standard.",
+    title: "Contract",
+    body: "Bespoke contract direct with the authority, or call-off under a prime supplier's framework. We can mirror standard Crown Commercial Service clauses where preferred.",
   },
   {
     step: "04",
-    title: "Mobilise without a long ramp-up",
+    title: "Mobilise",
     body: "The founder is on the engagement from day one. Where additional specialism is needed, we draw on a trusted associate network with verifiable delivery track records.",
   },
 ];
@@ -32,65 +32,73 @@ export function Frameworks() {
     <>
       <Section tone="cream" spacing="loose">
         <div className="max-w-3xl">
-          <span className="eyebrow">Frameworks &amp; routes to market</span>
+          <span className="eyebrow">Routes to market</span>
           <h1 className="mt-4 text-5xl md:text-6xl font-semibold leading-tight">
-            Buy from us the way your department prefers.
+            How to engage Redcliffe Digital.
           </h1>
           <p className="mt-6 text-lg text-brand-slate leading-relaxed">
-            We hold the major Crown Commercial Service agreements relevant to
-            digital delivery, plus direct routes for departments that prefer
-            bespoke procurement. Every engagement is wrapped in the standard
-            Crown Commercial Service terms and conditions.
+            Redcliffe Digital is a recently incorporated firm. We currently
+            engage with authorities under direct contract, and as a specialist
+            sub-contractor to prime suppliers on existing frameworks. We are
+            actively preparing applications for the next G-Cloud and Digital
+            Outcomes refreshes.
           </p>
         </div>
       </Section>
 
       <Section tone="white">
         <div className="grid gap-6 md:grid-cols-2">
-          {frameworks.map((fw) => {
-            const id = fw.name.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-            return (
-              <Card key={fw.name} className="!p-10" id={id}>
-                <div className="flex items-start gap-3 mb-4">
-                  <BadgeCheck
-                    size={20}
-                    className="text-brand-red mt-1"
+          {routes.map((r) => (
+            <Card key={r.slug} className="!p-10" id={r.slug}>
+              <div className="flex items-center gap-3 mb-4">
+                {r.status === "active" ? (
+                  <CheckCircle2
+                    size={18}
+                    className="text-brand-red"
                     aria-hidden="true"
                   />
-                  <p className="eyebrow !text-brand-navy">{fw.buyer}</p>
-                </div>
-                <h2 className="text-3xl font-semibold mb-2">
-                  {fw.name}
-                </h2>
-                <p className="text-sm font-mono text-brand-slate mb-5">
-                  {fw.reference}
+                ) : (
+                  <Clock
+                    size={18}
+                    className="text-brand-slate"
+                    aria-hidden="true"
+                  />
+                )}
+                <p
+                  className={`eyebrow !${
+                    r.status === "active" ? "text-brand-red" : "text-brand-slate"
+                  }`}
+                >
+                  {r.status === "active" ? "Available now" : "Targeting next refresh"}
                 </p>
-                <p className="text-brand-slate leading-relaxed">
-                  {fw.description}
-                </p>
-                <div className="mt-6 pt-6 border-t border-brand-stone">
-                  <p className="eyebrow">Lots covered</p>
-                  <ul className="mt-3 flex flex-wrap gap-2">
-                    {fw.lots.map((lot) => (
-                      <li
-                        key={lot}
-                        className="text-xs px-3 py-1.5 bg-brand-stone text-brand-navy"
-                      >
-                        {lot}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </Card>
-            );
-          })}
+              </div>
+              <h2 className="text-3xl font-semibold mb-4">{r.name}</h2>
+              <p className="text-brand-slate leading-relaxed">{r.summary}</p>
+              <div className="mt-6 pt-6 border-t border-brand-stone">
+                <ul className="space-y-2">
+                  {r.details.map((d) => (
+                    <li
+                      key={d}
+                      className="flex gap-2 text-sm text-brand-ink leading-relaxed"
+                    >
+                      <span
+                        className="w-1.5 h-1.5 bg-brand-red mt-2 shrink-0"
+                        aria-hidden="true"
+                      />
+                      <span>{d}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Card>
+          ))}
         </div>
       </Section>
 
       <Section tone="cream">
-        <span className="eyebrow">How to buy from us</span>
+        <span className="eyebrow">Engagement process</span>
         <h2 className="mt-3 text-4xl md:text-5xl font-semibold leading-tight max-w-3xl">
-          A four-step path through framework procurement.
+          From first conversation to mobilised team.
         </h2>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {buyingProcess.map((p) => (
@@ -119,16 +127,17 @@ export function Frameworks() {
         <div className="grid gap-8 lg:grid-cols-12 items-center">
           <div className="lg:col-span-8">
             <h2 className="text-3xl md:text-5xl font-semibold leading-tight text-brand-cream">
-              Need our service definitions or pricing schedules?
+              Need our company information pack for due diligence?
             </h2>
             <p className="mt-4 max-w-2xl text-brand-cream/85">
-              We can send framework-standard service definition documents,
-              pricing matrices and case study packs by return.
+              We can send a procurement information pack — policies, assurance
+              statements, insurance certificates and a capability statement — by
+              return.
             </p>
           </div>
           <div className="lg:col-span-4 lg:justify-self-end">
             <Button as="link" to="/contact" variant="secondary">
-              Request documents <ArrowRight size={16} aria-hidden="true" />
+              Request the pack <ArrowRight size={16} aria-hidden="true" />
             </Button>
           </div>
         </div>

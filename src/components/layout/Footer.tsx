@@ -17,13 +17,10 @@ const columns = [
   {
     heading: "Procurement",
     links: [
-      { to: "/frameworks", label: "Frameworks & lots" },
-      { to: "/frameworks#g-cloud-14", label: "G-Cloud 14" },
-      { to: "/frameworks#digital-outcomes-6", label: "Digital Outcomes 6" },
-      {
-        to: "/contact",
-        label: "Bid team contact",
-      },
+      { to: "/frameworks", label: "Routes to market" },
+      { to: "/frameworks#direct-award", label: "Direct award" },
+      { to: "/frameworks#sub-contracting", label: "Sub-contract / consortium" },
+      { to: "/contact", label: "Bid team contact" },
     ],
   },
   {
