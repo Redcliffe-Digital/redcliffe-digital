@@ -109,9 +109,9 @@ export function Home() {
               <p className="mt-6 max-w-2xl text-lg text-brand-slate leading-relaxed">
                 Redcliffe Digital is a UK software engineering firm focused on
                 the public sector. We bring senior engineering experience from
-                defence, financial services and other regulated industries —
-                delivered against the GDS Service Standard and the assurance
-                bar departments already audit to.
+                cyber security, applied AI and financial services — delivered
+                against the GDS Service Standard and the assurance bar
+                departments already audit to.
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
                 <Button as="link" to="/capabilities" variant="primary" withArrow>
@@ -138,7 +138,7 @@ export function Home() {
                     {[
                       "Senior engineers — no junior bench warmers on critical work",
                       "Open standards, open source, no vendor lock-in",
-                      "Security-cleared resourcing available on request",
+                      "Applied AI and self-hosted LLM expertise for data-sovereign use cases",
                       "Discovery to live in weeks, not quarters",
                     ].map((line) => (
                       <li key={line} className="flex gap-3">

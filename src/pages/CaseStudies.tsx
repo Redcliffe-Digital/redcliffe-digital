@@ -14,12 +14,12 @@ export function CaseStudies() {
           </h1>
           <p className="mt-6 text-lg text-brand-slate leading-relaxed">
             Redcliffe Digital is a recently incorporated firm. Our team's
-            delivery experience to date is predominantly in the commercial
-            sector, with one prior engagement supporting a Ministry of
-            Defence customer. We are now focused entirely on UK public
-            sector work, and bringing the engineering, security and
-            assurance disciplines we have honed in regulated commercial
-            environments to the services government needs to deliver.
+            delivery experience to date is in the commercial sector —
+            across cyber security, applied AI and financial services. We are
+            now focused entirely on UK public sector work, and bringing the
+            engineering, security and assurance disciplines we have honed in
+            regulated commercial environments to the services government
+            needs to deliver.
           </p>
           <p className="mt-4 text-lg text-brand-slate leading-relaxed">
             Client names, technologies and figures are anonymised where

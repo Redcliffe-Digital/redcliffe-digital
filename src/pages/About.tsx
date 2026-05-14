@@ -37,11 +37,11 @@ const values = [
 const director = {
   name: "Joseph Millington",
   role: "Founder & Director",
-  bio: "Software engineer with delivery experience across cyber security and financial services, and a prior engagement supporting a Ministry of Defence customer. Sole director and 100% shareholder of Redcliffe Digital Ltd. Accountable for every engagement.",
+  bio: "Software engineer with delivery experience across cyber security, applied AI and financial services. Sole director and 100% shareholder of Redcliffe Digital Ltd. Accountable for every engagement.",
   expertise: [
     "Cyber security & applied AI",
+    "Self-hosted LLMs and ML infrastructure",
     "Financial services back-end engineering",
-    "Cleared engineering for defence customers",
   ],
 };
 
@@ -57,11 +57,10 @@ export function About() {
             </h1>
             <p className="mt-6 text-lg text-brand-slate leading-relaxed">
               Redcliffe Digital was founded to bring engineering rigour from
-              defence, financial services and other regulated sectors to UK
-              government. We are a recently incorporated firm built around a
-              senior team with strong commercial delivery track records and
-              prior defence engagement experience — now focused entirely on
-              the public sector.
+              cyber security, applied AI and financial services to the UK
+              public sector. We are a recently incorporated firm built around
+              a senior team with strong commercial delivery track records —
+              now focused entirely on the public sector.
             </p>
           </div>
           <div className="lg:col-span-5">

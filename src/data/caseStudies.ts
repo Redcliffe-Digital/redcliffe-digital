@@ -68,24 +68,4 @@ export const caseStudies: CaseStudy[] = [
       "ML training & serving",
     ],
   },
-  {
-    slug: "mod-secure-engineering",
-    client: "Ministry of Defence (anonymised)",
-    sector: "Defence — prior engagement",
-    title: "Secure engineering for a Ministry of Defence customer",
-    challenge:
-      "Prior engagement supporting a Ministry of Defence customer with secure software engineering work delivered against defence accreditation standards. Programme details remain under permanent confidentiality; we can verify sector, scope, duration and technologies, and provide referees where the customer has approved that route.",
-    approach: [
-      "Engineering against defence-grade security and assurance standards.",
-      "Working in a cleared environment with formal change control.",
-      "Cross-disciplinary collaboration with customer subject-matter experts.",
-      "Documentation standards aligned to accreditation requirements.",
-    ],
-    outcome: [
-      "Delivered to the customer's accreditation timeline.",
-      "Established working patterns now repeated in our public sector approach.",
-      "Demonstrable evidence of cleared engineering experience.",
-    ],
-    technologies: ["Defence-cleared environment", "Secure SDLC"],
-  },
 ];
