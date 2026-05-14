@@ -23,7 +23,7 @@ export const company = {
     phone: "+44 (0)117 000 0000",
     linkedin: "https://www.linkedin.com/company/redcliffe-digital",
   },
-  accreditations: ["Cyber Essentials", "ICO Registered"],
+  accreditations: ["ICO Registered"],
   frameworks: [
     "Crown Commercial Service Supplier",
     "G-Cloud 14",

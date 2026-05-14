@@ -1,17 +1,17 @@
 import {
-  ShieldCheck,
   FileCheck2,
   Accessibility,
   Compass,
   Cloud,
+  ShieldCheck,
 } from "lucide-react";
 
 const items = [
-  { label: "Cyber Essentials", icon: ShieldCheck, kind: "Accredited" },
   { label: "ICO Registered", icon: FileCheck2, kind: "Accredited" },
   { label: "WCAG 2.1 AA", icon: Accessibility, kind: "Built to" },
   { label: "GDS Service Standard", icon: Compass, kind: "Built to" },
   { label: "NCSC Cloud Security Principles", icon: Cloud, kind: "Built to" },
+  { label: "UK GDPR", icon: ShieldCheck, kind: "Built to" },
 ];
 
 export function TrustBand() {
