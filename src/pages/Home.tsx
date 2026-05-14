@@ -330,16 +330,25 @@ export function Home() {
 
       {/* CASE STUDIES PREVIEW */}
       <Section tone="stone">
-        <div className="flex items-end justify-between flex-wrap gap-6 mb-10">
-          <div>
+        <div className="grid gap-6 lg:grid-cols-12 items-end mb-10">
+          <div className="lg:col-span-8">
             <span className="eyebrow">Selected work</span>
-            <h2 className="mt-3 text-4xl md:text-5xl font-semibold leading-tight max-w-2xl">
-              Public services we have helped to ship.
+            <h2 className="mt-3 text-4xl md:text-5xl font-semibold leading-tight">
+              Public sector by design — and bespoke private engagements too.
             </h2>
+            <p className="mt-5 text-lg text-brand-slate leading-relaxed max-w-2xl">
+              Our primary focus is the UK public sector. Where capability
+              aligns, we also take selective bespoke engineering engagements
+              for private clients — particularly in cyber security, applied
+              AI and financial services, the sectors our delivery track
+              record runs deepest.
+            </p>
           </div>
-          <Button as="link" to="/case-studies" variant="outline" withArrow>
-            All case studies
-          </Button>
+          <div className="lg:col-span-4 lg:justify-self-end">
+            <Button as="link" to="/case-studies" variant="outline" withArrow>
+              All case studies
+            </Button>
+          </div>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
           {featuredCases.map((cs) => (

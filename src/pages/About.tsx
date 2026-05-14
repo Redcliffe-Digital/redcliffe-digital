@@ -59,8 +59,9 @@ export function About() {
               Redcliffe Digital was founded to bring engineering rigour from
               cyber security, applied AI and financial services to the UK
               public sector. We are a recently incorporated firm built around
-              a senior team with strong commercial delivery track records —
-              now focused entirely on the public sector.
+              a senior team with strong commercial delivery track records,
+              with continuing capacity for bespoke private sector
+              engagements where capability aligns.
             </p>
           </div>
           <div className="lg:col-span-5">
