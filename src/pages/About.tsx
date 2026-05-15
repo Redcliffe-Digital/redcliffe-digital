@@ -70,7 +70,6 @@ export function About() {
               <dl className="mt-5 grid grid-cols-2 gap-5 text-sm">
                 <Fact label="Legal name" value={company.legalName} />
                 <Fact label="Companies House" value={company.companiesHouseNumber} />
-                <Fact label="Incorporated" value={company.incorporationDate} />
                 <Fact label="ICO" value={company.icoRegistration} />
                 {company.vatNumber ? (
                   <Fact label="VAT" value={company.vatNumber} />

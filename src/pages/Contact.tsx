@@ -197,14 +197,6 @@ export function Contact() {
                 </div>
                 <div>
                   <dt className="text-[11px] uppercase tracking-widest text-brand-slate font-semibold">
-                    Incorporated
-                  </dt>
-                  <dd className="text-brand-navy font-medium">
-                    {company.incorporationDate}
-                  </dd>
-                </div>
-                <div>
-                  <dt className="text-[11px] uppercase tracking-widest text-brand-slate font-semibold">
                     ICO
                   </dt>
                   <dd className="text-brand-navy font-medium">
