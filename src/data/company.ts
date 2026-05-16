@@ -31,8 +31,7 @@ export const company = {
   contact: {
     email: "admin@redcliffedigital.co.uk",
     bidsEmail: "admin@redcliffedigital.co.uk",
-    // Set once a business line is provisioned.
-    phone: "" as string,
+    phone: "+44 7794 310007",
     // Add the company LinkedIn URL once the page is set up. Empty string =
     // LinkedIn link is hidden everywhere on the site.
     linkedin: "" as string,
