@@ -4,10 +4,12 @@ import {
   Compass,
   Cloud,
   ShieldCheck,
+  Award,
 } from "lucide-react";
 
 const items = [
   { label: "ICO Registered", icon: FileCheck2, kind: "Accredited" },
+  { label: "ISO 9001", icon: Award, kind: "Built to" },
   { label: "WCAG 2.1 AA", icon: Accessibility, kind: "Built to" },
   { label: "GDS Service Standard", icon: Compass, kind: "Built to" },
   { label: "NCSC Cloud Security Principles", icon: Cloud, kind: "Built to" },
@@ -21,7 +23,7 @@ export function TrustBand() {
         <p className="text-[10px] tracking-widest uppercase text-brand-slate font-semibold mb-4">
           Designed, built and accredited to UK public sector standards
         </p>
-        <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-4">
+        <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-x-6 gap-y-4">
           {items.map(({ label, icon: Icon, kind }) => (
             <li
               key={label}
