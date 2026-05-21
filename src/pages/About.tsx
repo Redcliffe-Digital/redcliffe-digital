@@ -2,6 +2,7 @@ import { Section } from "../components/ui/Section";
 import { Container } from "../components/ui/Container";
 import { Card } from "../components/ui/Card";
 import { Button } from "../components/ui/Button";
+import { ImageFeature } from "../components/ui/ImageFeature";
 import { company } from "../data/company";
 import {
   Compass,
@@ -83,6 +84,14 @@ export function About() {
           </div>
         </div>
       </Section>
+
+      {/* IMAGE FEATURE — London skyline, UK identity anchor */}
+      <ImageFeature
+        src="/images/uk-architecture.jpg"
+        alt="Aerial view of London with Tower Bridge and the Thames at golden hour"
+        eyebrow="UK public sector"
+        heading="Engineered in Britain, for British government."
+      />
 
       <Section tone="white">
         <div className="grid gap-12 lg:grid-cols-12">

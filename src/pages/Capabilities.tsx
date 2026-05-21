@@ -1,5 +1,6 @@
 import { Section } from "../components/ui/Section";
 import { Button } from "../components/ui/Button";
+import { ImageFeature } from "../components/ui/ImageFeature";
 import { capabilities } from "../data/capabilities";
 import { CheckCircle2 } from "lucide-react";
 
@@ -65,6 +66,14 @@ export function Capabilities() {
           })}
         </div>
       </Section>
+
+      {/* IMAGE FEATURE — modern workspace */}
+      <ImageFeature
+        src="/images/workspace.jpg"
+        alt="A modern workspace with code on a monitor, a tablet showing UI work, and accessories on a clean desk"
+        eyebrow="The day-to-day"
+        heading="Built by people who still write the code."
+      />
 
       <Section tone="navy" spacing="tight">
         <div className="grid gap-8 lg:grid-cols-12 items-center">

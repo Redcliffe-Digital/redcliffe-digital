@@ -19,6 +19,7 @@ import { Button } from "../components/ui/Button";
 import { Card } from "../components/ui/Card";
 import { TrustBand } from "../components/ui/TrustBand";
 import { NetworkPattern } from "../components/ui/NetworkPattern";
+import { ImageFeature } from "../components/ui/ImageFeature";
 import { capabilities } from "../data/capabilities";
 import { caseStudies } from "../data/caseStudies";
 
@@ -306,6 +307,15 @@ export function Home() {
           </ul>
         </div>
       </Section>
+
+      {/* IMAGE FEATURE — Earth from orbit, networks of city lights */}
+      <ImageFeature
+        src="/images/abstract-tech.jpg"
+        alt="Networks of city lights connecting continents, viewed from orbit at night"
+        eyebrow="Engineering at scale"
+        heading="Connected systems, engineered with intent."
+        height="lg"
+      />
 
       {/* HOW WE WORK / PILLARS */}
       <Section tone="cream">
