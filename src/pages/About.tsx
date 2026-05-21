@@ -140,20 +140,15 @@ export function About() {
             </p>
           </div>
         </div>
-        <div className="grid gap-10 lg:grid-cols-12 items-start">
+        <div className="mt-4 pt-12 border-t border-brand-stone grid gap-10 lg:grid-cols-12 items-start">
           <div className="lg:col-span-5">
             <p className="eyebrow">{director.role}</p>
-            <h3 className="mt-3 font-serif text-4xl md:text-5xl font-semibold text-brand-navy leading-tight">
+            <h3 className="mt-3 font-serif text-3xl md:text-4xl font-semibold text-brand-navy leading-tight">
               {director.name}
             </h3>
-          </div>
-          <div className="lg:col-span-7">
-            <p className="text-lg text-brand-slate leading-relaxed">
-              {director.bio}
-            </p>
-            <div className="mt-8 pt-6 border-t border-brand-stone">
+            <div className="mt-8">
               <p className="eyebrow">Areas of focus</p>
-              <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+              <ul className="mt-3 space-y-2">
                 {director.expertise.map((item) => (
                   <li
                     key={item}
@@ -164,6 +159,11 @@ export function About() {
                 ))}
               </ul>
             </div>
+          </div>
+          <div className="lg:col-span-7">
+            <p className="text-lg text-brand-slate leading-relaxed">
+              {director.bio}
+            </p>
           </div>
         </div>
       </Section>
