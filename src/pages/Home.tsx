@@ -124,7 +124,7 @@ export function Home() {
 
               <dl className="mt-14 grid grid-cols-3 gap-6 max-w-xl">
                 <Stat value="WCAG 2.1 AA" label="Accessibility default" />
-                <Stat value="NCSC Aligned" label="Information security" />
+                <Stat value="Cyber Essentials" label="Information security" />
                 <Stat value="GDS Aligned" label="Service Standard" />
               </dl>
             </div>

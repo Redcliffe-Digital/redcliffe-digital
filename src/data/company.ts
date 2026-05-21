@@ -38,7 +38,13 @@ export const company = {
     // LinkedIn link is hidden everywhere on the site.
     linkedin: "" as string,
   },
-  accreditations: ["ICO Registered"],
+  accreditations: ["Cyber Essentials", "ICO Registered"],
+  cyberEssentials: {
+    certificateNumber: "977e1547-58d6-4d08-a248-ddcdc6cc27dd",
+    issuedOn: "21 May 2026",
+    registryUrl:
+      "https://registry.blockmarktech.com/certificates/977e1547-58d6-4d08-a248-ddcdc6cc27dd/",
+  },
   // Frameworks we currently hold. Add entries (e.g. "G-Cloud 14") only after
   // award and confirmation of supplier status on the Digital Marketplace.
   frameworks: [] as readonly string[],

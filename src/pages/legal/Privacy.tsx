@@ -105,11 +105,20 @@ export function Privacy() {
 
       <h2>Security</h2>
       <p>
-        We operate an information security programme informed by NCSC
-        guidance and the principles of Cyber Essentials. Technical and
-        organisational measures include encryption in transit and at rest,
-        role-based access controls, documented joiner/mover/leaver processes,
-        and ongoing security awareness training for all staff.
+        We hold Cyber Essentials certification (certificate{" "}
+        <a
+          href={company.cyberEssentials.registryUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {company.cyberEssentials.certificateNumber}
+        </a>
+        , issued {company.cyberEssentials.issuedOn}, verifiable on the public
+        certificate registry) and operate an information security programme
+        informed by NCSC guidance. Technical and organisational measures
+        include encryption in transit and at rest, role-based access
+        controls, documented joiner/mover/leaver processes, and ongoing
+        security awareness training for all staff.
       </p>
 
       <h2>Changes to this notice</h2>
