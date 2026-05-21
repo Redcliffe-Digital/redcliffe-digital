@@ -7,7 +7,7 @@ import { Button } from "../ui/Button";
 const nav = [
   { to: "/about", label: "About" },
   { to: "/capabilities", label: "Capabilities" },
-  { to: "/frameworks", label: "Frameworks" },
+  // { to: "/frameworks", label: "Frameworks" }, // hidden for now
   { to: "/case-studies", label: "Case studies" },
   { to: "/insights", label: "Insights" },
 ];

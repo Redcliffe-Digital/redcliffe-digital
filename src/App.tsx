@@ -3,7 +3,7 @@ import { Layout } from "./components/layout/Layout";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Capabilities } from "./pages/Capabilities";
-import { Frameworks } from "./pages/Frameworks";
+// import { Frameworks } from "./pages/Frameworks"; // hidden for now
 import { CaseStudies } from "./pages/CaseStudies";
 import { Insights } from "./pages/Insights";
 import { Contact } from "./pages/Contact";
@@ -25,7 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/capabilities" element={<Capabilities />} />
-          <Route path="/frameworks" element={<Frameworks />} />
+          {/* <Route path="/frameworks" element={<Frameworks />} /> */}
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/insights" element={<Insights />} />
           <Route path="/contact" element={<Contact />} />

@@ -14,15 +14,16 @@ const columns = [
       { to: "/contact", label: "Contact" },
     ],
   },
-  {
-    heading: "Procurement",
-    links: [
-      { to: "/frameworks", label: "Routes to market" },
-      { to: "/frameworks#direct-award", label: "Direct award" },
-      { to: "/frameworks#sub-contracting", label: "Sub-contract / consortium" },
-      { to: "/contact", label: "Bid team contact" },
-    ],
-  },
+  // Procurement column hidden for now — points at /frameworks which is also hidden.
+  // {
+  //   heading: "Procurement",
+  //   links: [
+  //     { to: "/frameworks", label: "Routes to market" },
+  //     { to: "/frameworks#direct-award", label: "Direct award" },
+  //     { to: "/frameworks#sub-contracting", label: "Sub-contract / consortium" },
+  //     { to: "/contact", label: "Bid team contact" },
+  //   ],
+  // },
   {
     heading: "Governance",
     links: [

@@ -117,9 +117,9 @@ export function Home() {
                 <Button as="link" to="/capabilities" variant="primary" withArrow>
                   Explore our capabilities
                 </Button>
-                <Button as="link" to="/frameworks" variant="outline">
+                {/* <Button as="link" to="/frameworks" variant="outline">
                   Ways to engage us
-                </Button>
+                </Button> */}
               </div>
 
               <dl className="mt-14 grid grid-cols-3 gap-6 max-w-xl">

@@ -34,16 +34,17 @@ const values = [
   },
 ];
 
-const director = {
-  name: "Joseph Millington",
-  role: "Founder & Director",
-  bio: "Software engineer with 8+ years' experience building highly-available, distributed and mission-critical back-end systems. Has led the integration of LLMs and modern ML tooling into production back-ends across cyber threat intelligence, quantitative trading and commodities — including a Retrieval-Augmented Generation pipeline now in live use at a multinational cyber threat intelligence firm. MSc Business Consulting Analytics (Distinction), Loughborough University. UK citizen, eligible for UK security clearance. Sole director and 100% shareholder of Redcliffe Digital Ltd; accountable for every engagement.",
-  expertise: [
-    "Applied AI — LLMs, RAG, vector databases",
-    "Cyber threat intelligence back-ends",
-    "Real-time distributed systems (Python, Go, Rust)",
-  ],
-};
+// Director profile hidden for now — restore the Section below in JSX to re-enable.
+// const director = {
+//   name: "Joseph Millington",
+//   role: "Founder & Director",
+//   bio: "Software engineer with 8+ years' experience building highly-available, distributed and mission-critical back-end systems. Has led the integration of LLMs and modern ML tooling into production back-ends across cyber threat intelligence, quantitative trading and commodities — including a Retrieval-Augmented Generation pipeline now in live use at a multinational cyber threat intelligence firm. MSc Business Consulting Analytics (Distinction), Loughborough University. UK citizen, eligible for UK security clearance. Sole director and 100% shareholder of Redcliffe Digital Ltd; accountable for every engagement.",
+//   expertise: [
+//     "Applied AI — LLMs, RAG, vector databases",
+//     "Cyber threat intelligence back-ends",
+//     "Real-time distributed systems (Python, Go, Rust)",
+//   ],
+// };
 
 export function About() {
   return (
@@ -123,6 +124,7 @@ export function About() {
         </div>
       </Section>
 
+      {/* Leadership + director profile section hidden for now.
       <Section tone="white">
         <div className="grid gap-10 lg:grid-cols-12 mb-10">
           <div className="lg:col-span-6">
@@ -167,6 +169,7 @@ export function About() {
           </div>
         </div>
       </Section>
+      */}
 
       <Section tone="cream">
         <div className="grid gap-10 lg:grid-cols-12">
