@@ -142,24 +142,13 @@ export function About() {
         </div>
         <div className="grid gap-10 lg:grid-cols-12 items-start">
           <div className="lg:col-span-5">
-            <div className="aspect-[4/5] bg-brand-navy relative overflow-hidden">
-              <div
-                className="absolute inset-0 bg-grid-navy bg-[size:32px_32px] opacity-30"
-                aria-hidden="true"
-              />
-              <div className="absolute inset-0 flex items-end p-6">
-                <span className="text-xs uppercase tracking-widest text-brand-cyan font-semibold">
-                  Replace with director portrait
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="lg:col-span-7">
             <p className="eyebrow">{director.role}</p>
-            <h3 className="mt-2 text-3xl md:text-4xl font-semibold leading-tight">
+            <h3 className="mt-3 font-serif text-4xl md:text-5xl font-semibold text-brand-navy leading-tight">
               {director.name}
             </h3>
-            <p className="mt-6 text-lg text-brand-slate leading-relaxed">
+          </div>
+          <div className="lg:col-span-7">
+            <p className="text-lg text-brand-slate leading-relaxed">
               {director.bio}
             </p>
             <div className="mt-8 pt-6 border-t border-brand-stone">
