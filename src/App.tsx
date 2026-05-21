@@ -5,7 +5,7 @@ import { About } from "./pages/About";
 import { Capabilities } from "./pages/Capabilities";
 // import { Frameworks } from "./pages/Frameworks"; // hidden for now
 import { CaseStudies } from "./pages/CaseStudies";
-import { Insights } from "./pages/Insights";
+// import { Insights } from "./pages/Insights"; // hidden for now
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
 import { Privacy } from "./pages/legal/Privacy";
@@ -27,7 +27,7 @@ function App() {
           <Route path="/capabilities" element={<Capabilities />} />
           {/* <Route path="/frameworks" element={<Frameworks />} /> */}
           <Route path="/case-studies" element={<CaseStudies />} />
-          <Route path="/insights" element={<Insights />} />
+          {/* <Route path="/insights" element={<Insights />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/accessibility" element={<Accessibility />} />

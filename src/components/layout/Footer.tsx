@@ -10,7 +10,7 @@ const columns = [
       { to: "/about", label: "About" },
       { to: "/capabilities", label: "Capabilities" },
       { to: "/case-studies", label: "Case studies" },
-      { to: "/insights", label: "Insights" },
+      // { to: "/insights", label: "Insights" }, // hidden for now
       { to: "/contact", label: "Contact" },
     ],
   },

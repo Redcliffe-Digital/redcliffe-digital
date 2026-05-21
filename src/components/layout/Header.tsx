@@ -9,7 +9,7 @@ const nav = [
   { to: "/capabilities", label: "Capabilities" },
   // { to: "/frameworks", label: "Frameworks" }, // hidden for now
   { to: "/case-studies", label: "Case studies" },
-  { to: "/insights", label: "Insights" },
+  // { to: "/insights", label: "Insights" }, // hidden for now
 ];
 
 export function Header() {
